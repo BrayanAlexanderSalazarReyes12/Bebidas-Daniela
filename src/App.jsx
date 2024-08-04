@@ -52,10 +52,6 @@ function App() {
         // Lógica para Venmo
         console.log('Procesando pago con Venmo...');
         break;
-      case 'apple pay':
-        // Lógica para Apple Pay
-        console.log('Procesando pago con Apple Pay...');
-        break;
       default:
         console.log('Método de pago no seleccionado');
     }
@@ -260,7 +256,6 @@ function App() {
                 <option value="" disabled selected>Por favor seleccione</option>
                 <option value="zelle">Zelle</option>
                 <option value="venmo">Venmo</option>
-                <option value="Aple pay">Aple pay</option>
               </select>
           </div>
         </div>
