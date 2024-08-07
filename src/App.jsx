@@ -23,7 +23,7 @@ function App() {
     pago: '',
     total: '',
     descripcion: '',
-    email_empresa: 'Atomicnutrititon2024@gmail.com'
+    email_empresa: 'Atomicnutrition2024@gmail.com'
   })
 
   const productos = [
