@@ -22,7 +22,8 @@ function App() {
     sabores: '',
     pago: '',
     total: '',
-    descripcion: ''
+    descripcion: '',
+    email_empresa: 'Atomicnutrititon2024@gmail.com'
   })
 
   const productos = [
