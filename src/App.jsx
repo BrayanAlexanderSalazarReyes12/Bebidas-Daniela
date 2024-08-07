@@ -30,7 +30,8 @@ function App() {
     {name: 'Tropical Mojito', price: 10.00},
     {name: 'Tropical Rainbow', price: 10.00},
     {name: 'Blue Blast', price: 10.00},
-    {name: 'Piña colada', price: 10.00}
+    {name: 'Piña colada', price: 10.00},
+    {name: '5- Aloe Packets', price: 10.00}
   ]
 
   const [selectedProducts, setSelectedProducts] = useState({});
@@ -73,7 +74,7 @@ function App() {
     return Object.values(selectedProducts).reduce((acc, product) => product ? acc + product.price * product.quantity : acc, 0).toFixed(2);
   };
 
-  const calculateTax = (subtotal) => (subtotal * 0.10).toFixed(2);
+  const calculateTax = (subtotal) => (subtotal * 0.027).toFixed(2);
   const calculateShipping = () => 5.00;
   const calculateTotal = (subtotal, tax, shipping) => (parseFloat(subtotal) + parseFloat(tax) + parseFloat(shipping)).toFixed(2);
 
